@@ -1,0 +1,12 @@
+numbers = int(input('Введите число: '))
+suma = 0 #первое значение для суммы
+mult = 1 #первое значение для произведения
+
+while numbers > 0:
+    tir = numbers % 10
+    numbers //= 10
+    suma += tir
+    mult *= tir
+
+print("Сумма:", suma)
+print("Произведение:", mult)
